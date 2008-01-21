@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Encode qw(find_encoding);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 our $SINGLETON = bless {}, __PACKAGE__;
 
@@ -14,7 +14,7 @@ sub croak {
     Carp::croak(__PACKAGE__ . ": @_");
 }
 
-my $LATIN1 = Encode::find_encoding('iso-8859-1')
+my $LATIN1 = find_encoding('iso-8859-1')
     or croak("Can't load latin-1");
 
 sub _find_encoding {
