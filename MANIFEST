@@ -2,6 +2,7 @@ Changes
 lib/encoding/source.pm
 Makefile.PL
 MANIFEST
+MANIFEST.SKIP
 META.yml
 README
 t/01name.t
