@@ -9,6 +9,7 @@ if (ord("A") == 193) {
 }
 
 WriteMakefile(
+    AUTHOR	    => 'Rafael Garcia-Suarez <rgarciasuarez@gmail.com>',
     NAME	    => 'encoding::source',
     VERSION_FROM    => 'lib/encoding/source.pm',
     PREREQ_PM	    => { Encode => 0 },
