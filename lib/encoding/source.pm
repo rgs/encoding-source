@@ -84,6 +84,12 @@ __END__
 
 encoding::source - allows you to write your script in non-ascii or non-utf8
 
+=head1 DEPRECATION NOTICE
+
+B<NOTE>: This module relies on the internal perl variable C<${^ENCODING}>,
+which is deprecated in perl 5.22.0. In this perl version the C<encoding> pragma
+has been made lexical, which removes the usefulness of this module.
+
 =head1 SYNOPSIS
 
     use encoding::source 'utf8';
@@ -100,7 +106,7 @@ encoding::source - allows you to write your script in non-ascii or non-utf8
 This pragma allows to change the default encoding for string literals in the
 current lexical compilation unit (block or file).
 
-This is like the C<encoding> pragma, but done right:
+This is like the C<encoding> pragma (pre-5.22.0), but done right:
 
 =over 4
 
