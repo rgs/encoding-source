@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Encode qw(find_encoding);
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 our $SINGLETON = bless {}, __PACKAGE__;
 

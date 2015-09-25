@@ -1,12 +1,22 @@
---- #YAML:1.0
-name:                encoding-source
-version:             0.02
-abstract:            ~
-license:             ~
-generated_by:        ExtUtils::MakeMaker version 6.32_01
-distribution_type:   module
-requires:     
-    Encode:                        0
+---
+abstract: 'Allows you to write your script in non-ascii or non-utf8'
+author:
+  - 'Rafael Garcia-Suarez <rgs@consttype.org>'
+build_requires:
+  ExtUtils::MakeMaker: '0'
+configure_requires:
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.140640'
+license: perl
 meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
-    version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: encoding-source
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Encode: '0'
+version: '0.03'
